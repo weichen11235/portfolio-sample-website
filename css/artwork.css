@@ -79,3 +79,7 @@ nav{
 .artwork-img img{
   width: 100%;
 }
+.anatomy-poster{
+  grid-template-columns: 1055px;
+  justify-content: center;
+}
