@@ -33,6 +33,9 @@ a{
 .accent{
   color:var(--text-highlight);
 }
+.artwork-img img{
+  border:1px grey solid;
+}
 /* navigation */
 nav{
   height: 50px;
