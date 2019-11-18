@@ -47,7 +47,7 @@ nav{
   font-size: 23px;
   text-decoration: none;
   color: #ffffff;
-  padding: 9px 15px;;
+  padding: 11px 15px;;
 }
 .menu-items:hover{
   background-color: var(--menu-hover);
@@ -70,4 +70,28 @@ footer{
   font-size: 15px;
   padding: 100px 0 50px 0;
   text-align: center;
+}
+@media (max-width:376px) {
+  /* nav */
+  nav{
+    height: 35px;
+  }
+  #logo{
+    width: 50px;
+    right: 15px;
+  }
+  #menu{
+    left: 25px;
+  }
+  .menu-items{
+    font-size: 13px;
+    padding: 9px 10px;;
+  }
+  /* main */
+  #gallery{
+    padding: 30px 30px 0 30px;
+    grid-template-columns:1fr;
+    grid-template-rows: 240px;
+    grid-gap: 30px;
+  }
 }

@@ -33,7 +33,7 @@ a{
 .accent{
   color:var(--text-highlight);
 }
-.artwork-img img{
+.border{
   border:1px grey solid;
 }
 /* navigation */
@@ -60,7 +60,7 @@ nav{
   font-size: 23px;
   text-decoration: none;
   color: #ffffff;
-  padding: 9px 15px;;
+  padding: 11px 15px;;
 }
 .menu-items:hover{
   background-color: var(--menu-hover);
@@ -69,6 +69,7 @@ nav{
 .content{
   background-color: #ffffff;
   width: 85vw;
+  min-height: 100vh;
   margin: auto;
   padding: 60px 125px 100px;
 }
@@ -85,4 +86,44 @@ nav{
 .anatomy-poster{
   grid-template-columns: 1055px;
   justify-content: center;
+}
+@media (max-width:376px) {
+  /* utility */
+  .heading{
+    font-size: 22px;
+    font-family: var(--serif);
+    padding: 15px 0 15px 0;
+    text-align: center;
+  }
+  .text{
+    font-size: 12px;
+    font-family: var(--sans-serif);
+  }
+  /* nav */
+  nav{
+    height: 35px;
+  }
+  #logo{
+    width: 50px;
+    right: 15px;
+  }
+  #menu{
+    left: 25px;
+  }
+  .menu-items{
+    font-size: 13px;
+    padding: 9px 10px;;
+  }
+  /* main content */
+  .content{
+    padding: 0 35px 35px 35px;
+  }
+  .artwork-img{
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding-top: 20px;
+  }
+  .anatomy-poster{
+    grid-template-columns: 250px;
+  }
 }

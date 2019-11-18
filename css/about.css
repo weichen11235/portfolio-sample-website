@@ -56,19 +56,54 @@ nav{
   font-size: 23px;
   text-decoration: none;
   color: #ffffff;
-  padding: 9px 15px;;
+  padding: 11px 15px;;
 }
 .menu-items:hover{
   background-color: var(--menu-hover);
 }
 /* main content */
+#function-call{
+  text-align: left;
+}
 .content{
   width: 85vw;
-  height: 85vh;
+  height: 100vh;
   background-color: #fff;
   margin:auto;
   padding: 60px;
 }
 #resume{
   color: var(--text-highlight);
+}
+@media (max-width:376px) {
+  /* utility */
+  .heading{
+    font-size: 22px;
+    font-family: var(--serif);
+    padding: 15px 0 15px 0;
+    text-align: center;
+  }
+  .text{
+    font-size: 12px;
+    font-family: var(--sans-serif);
+  }
+  /* nav */
+  nav{
+    height: 35px;
+  }
+  #logo{
+    width: 50px;
+    right: 15px;
+  }
+  #menu{
+    left: 25px;
+  }
+  .menu-items{
+    font-size: 13px;
+    padding: 9px 10px;;
+  }
+  /* main content */
+  .content{
+    padding: 20px;
+  }
 }
